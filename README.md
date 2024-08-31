@@ -1,24 +1,17 @@
 # BaristaBot ☕️
-## an NLP Chatbot for a Cafe order + delivery system
 
-This project is a complete end-to-end NLP-based chatbot application for a local cafe I grew up visiting, designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
+BaristaBot is a Python-based NLP Chatbot designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
+
+This project is inspired by a local cafe that I grew up visiting. The chatbot aims to recreate that warm, welcoming experience by streamlining the order process through natural language interactions, making it easier for customers to enjoy their favorite café items."
 
 ## Project Structure
 
-The project is divided into three main directories:
-
-### 1. Frontend
-
-This folder contains the HTML and CSS files responsible for the user interface of the café website. It provides a simple and clean layout where users can interact with the chatbot.
-
-### 2. Backend
-
-The backend is built with FastAPI, a modern web framework for building APIs with Python. The backend handles requests from the Dialogflow webhook and interacts with the MySQL database to perform various operations like inserting orders, tracking order statuses, and more.
+The project is built with FastAPI, a modern web framework for building APIs with Python. The backend handles requests from the Dialogflow webhook and interacts with the MySQL database to perform various operations like inserting orders, tracking order statuses, and more.
 
 - **API Endpoints**:
   - **`/`**: Handles requests from Dialogflow and routes them to appropriate functions like adding items to the order, removing items, completing the order, and tracking order status.
 
-### 3. Database
+### Database
 
 The db folder contains MySQL queries and procedures necessary for handling data. This includes inserting order items, tracking order status, calculating total order prices, etc.
 
