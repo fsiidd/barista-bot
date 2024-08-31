@@ -1,4 +1,4 @@
-# ☕️ BaristaBot 
+# ☕️ BaristaBot - an NLP powered ChatBot
 
 BaristaBot is a Python-based NLP Chatbot designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
 
