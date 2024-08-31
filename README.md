@@ -37,19 +37,40 @@ The db folder contains MySQL queries and procedures necessary for handling data.
 
 ## Setup Instructions
 
-1. **Install Dependencies**:
+- Python 3.8+
+- MySQL
+- FastAPI
+- Dialogflow account
+- ngrok (for secure connections)
 
-   - Python 3.x
-   - FastAPI
-   - MySQL Connector for Python
-   - Dialogflow (set up your project on Dialogflow and configure the webhook)
+### Step 1: Set Up the Database
 
-2. **Database Setup**:
+1. Create a MySQL database and replace the current db in use.
+2. Run the provided SQL scripts in the `db` folder to set up the necessary tables and stored procedures.
 
-   - Create a MySQL database and replace the database currently in use.
-   - Run the SQL scripts in the `db` folder to create necessary tables and procedures.
+### Step 2: Set Up the Backend
 
-3. **Run the Backend**:
+1. Install the required Python packages:
    ```bash
-   uvicorn main:app --reload
+   pip install fastapi uvicorn mysql-connector-python
    ```
+2. Start the FastAPI server:
+   ```bash
+   uvicorn backend.main:app --reload
+   ```
+
+### Step 3: Set Up ngrok for Secure Connection
+
+1. Download and install ngrok from [ngrok.com](https://ngrok.com/).
+2. Run the following command to start ngrok on the port where your FastAPI server is running (default is 8000):
+   ```bash
+   ngrok http 8000
+   ```
+3. Copy the HTTPS URL provided by ngrok. This URL will be used in Dialogflow as the Webhook URL.
+
+### Step 4: Configure Dialogflow
+
+1. Create a new agent in Dialogflow.
+2. Set up intents that match the functionalities of your chatbot (e.g., `order.add`, `order.remove`, `order.complete`, `track.order`).
+3. In the Fulfillment section, enable the webhook and paste the ngrok URL you obtained earlier.
+4. Deploy your agent and start interacting with your chatbot.
