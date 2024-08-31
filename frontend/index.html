@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joud Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <img src="joud_logo.jpg" />
+        <h1>Welcome to Joud Coffee</h1>
+        <p>Sip, Savor, and Smile</p>
+        <a href="#menu" class="cta-button">View Menu</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
+      </div>
+    </header>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-category">
+        <h3>Beverages</h3>
+        <ul>
+          <li>Cappuccino - $3.50</li>
+          <li>Latte - $4.00</li>
+          <li>Americano - $2.50</li>
+          <li>Espresso - $2.00</li>
+          <li>Iced Coffee - $3.00</li>
+          <li>Matcha Latte - $4.50</li>
+          <li>Smoothie - $5.00</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>Pastries</h3>
+        <ul>
+          <li>Croissant - $2.50</li>
+          <li>Bagel - $3.00</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="location">
+      <h2>Find Us</h2>
+      <p>
+        Al Mireef St - Khalifa City - SE42 - Abu Dhabi - United Arab Emirates
+      </p>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?..."
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Phone: +123456789</p>
+      <p>Email: contact@joudcafe.com</p>
+    </section>
+    <iframe
+      class="chatbot-iframe"
+      width="350"
+      height="430"
+      allow="microphone;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/38d73593-d13f-4121-96f5-a64288fe6056"
+    ></iframe>
+
+    <footer>
+      <p>&copy; 2024 Joud Cafe. All rights reserved.</p>
+      <div class="social-media"></div>
+    </footer>
+  </body>
+</html>
