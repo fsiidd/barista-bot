@@ -1,4 +1,5 @@
-# NLP Chatbot for a cafe order + delivery system
+# BaristaBot ☕️
+## an NLP Chatbot for a Cafe order + delivery system
 
 This project is a complete end-to-end NLP-based chatbot application for a local cafe I grew up visiting, designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
 
