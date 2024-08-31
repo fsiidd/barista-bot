@@ -2,7 +2,7 @@
 
 BaristaBot is a Python-based NLP Chatbot designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
 
-This project is inspired by a local cafe that I grew up visiting. The chatbot aims to recreate that warm, welcoming experience by streamlining the order process through natural language interactions, making it easier for customers to enjoy their favorite café items."
+This project is inspired by a local cafe that I grew up visiting. The chatbot aims to recreate that warm, welcoming experience by streamlining the order process through natural language interactions, making it easier for customers to enjoy their favorite café items.
 
 <img width="1464" alt="Joud Coffee Landing Page" src="https://github.com/user-attachments/assets/c04fbb00-4f16-48cd-a9b1-bfbd6cb19a01">
 
