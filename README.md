@@ -1,4 +1,4 @@
-# BaristaBot ☕️
+# ☕️ BaristaBot 
 
 BaristaBot is a Python-based NLP Chatbot designed to handle customer interactions such as order placements, order tracking, and more. The chatbot is powered by Dialogflow for natural language processing and utilizes FastAPI to handle backend API interactions. The system also integrates a MySQL database to manage orders and order tracking efficiently.
 
@@ -15,6 +15,9 @@ The project is built with FastAPI, a modern web framework for building APIs with
 
 The db folder contains MySQL queries and procedures necessary for handling data. This includes inserting order items, tracking order status, calculating total order prices, etc.
 
+<img width="1464" alt="Joud Coffee Landing Page" src="https://github.com/user-attachments/assets/c04fbb00-4f16-48cd-a9b1-bfbd6cb19a01">
+
+
 ## Features
 
 - **Order Management**: Users can add, remove, and complete orders via the chatbot.
@@ -28,6 +31,17 @@ The db folder contains MySQL queries and procedures necessary for handling data.
 2. **Remove from Order**: The chatbot allows users to remove items from their order. The backend updates the order and informs the user of the updated order status.
 3. **Complete Order**: When an order is completed, the backend saves the order to the database, calculates the total price, and generates an order ID.
 4. **Track Order**: Users can inquire about the status of their order by providing their order ID. The chatbot fetches the order status from the database and returns it to the user.
+
+### Scenario 1: Placing an Order (Adding/Removing functionality)
+![2024-08-31_15-54-46 (1)](https://github.com/user-attachments/assets/8834f1f6-5431-4780-9e59-edb79a0c3646)
+
+### Scenario 2: Tracking an Order
+![2024-08-31_16-04-07 (1)](https://github.com/user-attachments/assets/43d518b2-4d68-492c-9a9c-7c58bc712f37)
+
+### Scenario 3: Handling Ambiguous Requests (incorrect input for cafe items + order tracking)
+![2024-08-31_16-08-05 (1)](https://github.com/user-attachments/assets/6c47273b-9551-456b-9e4b-d1a4ad4bce5e)
+
+
 
 ## Setup Instructions
 
